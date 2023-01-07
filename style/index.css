@@ -1,4 +1,4 @@
-/* global elements */
+/* ---- global elements ---- */
 * {
   margin: 0;
   font-family: "Work Sans", sans-serif;
@@ -33,13 +33,14 @@ p {
   margin: 20px 0px;
   line-height: 25px;
 }
+
 button {
   cursor: pointer;
   border: 0;
 }
 .btn-primary {
   color: white;
-  background-color: #fd6e0a;
+  background-color: #005fac;
   font-size: 20px;
   font-weight: 700;
   height: 60px;
@@ -47,11 +48,11 @@ button {
   padding: 0px 30px;
 }
 .btn-primary:hover {
-  background-color: #f3601c;
+  background-color: #003d6e;
 }
 
 .btn-secondary {
-  color: #fd6e0a;
+  color: black;
   background-color: white;
   font-size: 20px;
   font-weight: 700;
@@ -60,11 +61,8 @@ button {
   padding: 0px 30px;
 }
 .btn-secondary:hover {
-  background-color: #f3601c;
+  background-color: #003d6e;
   color: white;
-}
-
-.banner-content {
 }
 
 .container {
@@ -72,12 +70,12 @@ button {
   margin: 50px auto;
 }
 
-/* -----------------section specific codes ---------------- */
+/* ---- section specific codes ---- */
 
 /* section 1 - banner-section */
 
 .header-banner {
-  background-image: url(/new-year-new-me-main/images/banner/banner1.png);
+  background-image: url(../images/banner/banner3.png);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,13 +84,19 @@ button {
   justify-content: right;
   height: 90vh;
   text-align: right;
+  color: white;
 }
+.header-banner p {
+  color: white;
+}
+
 .banner-content {
   width: 500px;
   margin-right: 200px;
 }
 
 /* section 2 - failure-list */
+
 section.failure-list .container {
   display: flex;
   justify-content: space-between;
@@ -106,7 +110,6 @@ section.failure-list .container {
 ul {
   padding: 0;
 }
-
 .person {
   max-width: 500px;
 }
@@ -119,6 +122,47 @@ ul {
   color: #444343;
   line-height: 30px;
   text-align: left;
+}
+
+/* bonus section 2.1 - my skills */
+
+section.my-skills {
+  background-color: #005fac;
+  padding: 30px;
+}
+
+section.my-skills * {
+  color: white;
+}
+
+.my-skills .container {
+  display: flex;
+}
+
+.about-me {
+  width: 35%;
+}
+.skill-container {
+  width: 65%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.skill-item {
+  text-align: center;
+  padding: 18px;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px -14px rgba(0, 0, 0, 0.75);
+}
+.skill-item img {
+  width: 180px;
+  border-radius: 10px;
+}
+.skill-item h4 {
+  margin: 5px;
+}
+.skill-item p {
+  margin: 5px;
 }
 
 /* section 3 - my-plan */
@@ -149,11 +193,7 @@ section.my-plan .container {
 
 .newsletter {
   color: white;
-  background-image: linear-gradient(
-      to right,
-      rgba(249, 125, 20, 1),
-      rgba(266, 266, 266, 0.1)
-    ),
+  background-image: linear-gradient(to right, #005fac, rgba(266, 266, 266, 0.1)),
     url(./../images/watch.png);
 
   height: 300px;
@@ -192,6 +232,9 @@ input {
   border: 1px solid white;
   border-radius: 5px;
   margin-bottom: 20px;
+  padding-left: 15px;
+  color: white;
+  font-size: 100%;
 }
 .social-icons a {
   margin-right: 10px;
