@@ -1,0 +1,146 @@
+/* global elements */
+* {
+  margin: 0;
+  font-family: "Work Sans";
+  border: 1px solid blue;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 65px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #fd6e0a;
+  font-size: 20px;
+  font-weight: 700;
+  height: 60px;
+  border-radius: 5px;
+  border: 0;
+  padding: 0px 30px;
+}
+.btn-primary:hover {
+}
+
+.btn-secondary {
+  color: #fd6e0a;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 700;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #fd6e0a;
+  padding: 0px 30px;
+}
+.btn-secondary:hover {
+}
+
+.banner-content {
+}
+
+.container {
+  border: 1px solid red;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+/* -----------------section specific codes ---------------- */
+
+/* section 1 - banner-section */
+
+.header-banner {
+  background-image: url(/new-year-new-me-main/images/banner/banner1.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 90vh;
+  text-align: right;
+}
+.banner-container {
+  width: 500px;
+  margin-right: 200px;
+  border: 1px solid red;
+}
+
+/* section 2 - failure-list */
+section.failure-list .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.list-point :before {
+  content: "✓";
+}
+ul {
+  padding: 0;
+}
+
+.person {
+  max-width: 500px;
+}
+.list-content {
+  width: 320px;
+}
+.list-point {
+  list-style: none;
+  font-size: 16px;
+  color: #444343;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* section 3 - my-plan */
+section.my-plan .container {
+  text-align: center;
+}
+.plans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0px;
+}
+.plan-item {
+  text-align: center;
+}
+
+.my-plan p {
+  color: #737272;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+/* section 4 - Newsletter */
+
+.newsletter .container {
+  background-image: url(/new-year-new-me-main/images/watch.png);
+  /* background-blend-mode: ; */
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: linear-gradient(
+    90deg,
+    #f15b22 0%,
+    rgba(241, 91, 34, 0) 100%
+  );
+  border: 0px;
+  border-radius: 8px;
+}
